@@ -1,35 +1,33 @@
-package Tuan1;
+package Week1;
 
 import java.util.*;
 
 public class Bai6 {
 
     public static void ImportDay(Calendar a){
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int dayA, monthA, yearA;
 
         System.out.print("Nhap ngay: ");
-        dayA = sc.nextInt();
+        dayA = scanner.nextInt();
         a.set(Calendar.DAY_OF_MONTH, dayA);
 
         System.out.print("Nhap thang: ");
-        monthA = sc.nextInt();
+        monthA = scanner.nextInt();
         a.set(Calendar.MONTH, monthA-1);
 
         System.out.print("Nhap nam: ");
-        yearA = sc.nextInt();
+        yearA = scanner.nextInt();
         a.set(Calendar.YEAR, yearA);
     }
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-
         Calendar a = Calendar.getInstance();
         Calendar b = Calendar.getInstance();
 
         Bai6.ImportDay(a);
         Bai6.ImportDay(b);
 
-        // Câu 1
+        //1
         int i = a.compareTo(b);
         switch(i){
             case 0:
@@ -44,10 +42,12 @@ public class Bai6 {
         };
 
         //2
+        Calendar PreviousDay;
+        PreviousDay = a;
+        PreviousDay.add(Calendar.DATE, -1);
+        System.out.println("Ngay truoc ngay A la: " + PreviousDay.getTime() );
         a.add(Calendar.DATE, 1);
-
-        System.out.println("Ngay truoc ngay A la: " + a.getTime() );
-
+        System.out.println("Ngay sau ngay A la: " + a.getTime() );
 
         //3
         System.out.println(a.getTime() + " la ngay thu " + a.get(Calendar.DAY_OF_YEAR) + " cua nam");
