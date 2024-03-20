@@ -16,11 +16,11 @@ public class  Bai5 {
         int length_sum = s1.length() + s2.length();
         System.out.println("Tong chieu dai cua 2 chuoi: " + length_sum);
 
-        String sub_s1 = "";
-        String sub_s2 = "";
+        StringBuilder sub_s1 = new StringBuilder();
+        StringBuilder sub_s2 = new StringBuilder();
         for(int i = 0; i<3; i++){
-            sub_s1 += s1.charAt(i);
-            sub_s2 += s2.charAt(i);
+            sub_s1.append(s1.charAt(i));
+            sub_s2.append(s2.charAt(i));
         }
         System.out.println("Ba ki tu dau cua chuoi 1: " + sub_s1);
         System.out.println("Ba ki tu dau cua chuoi 2: " + sub_s2);
