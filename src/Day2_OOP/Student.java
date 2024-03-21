@@ -9,7 +9,7 @@ public class Student implements Comparable<Student>{
     private float mathScore;
     private float physicsScore;
     private float programmingIntroScore;
-    private final float averageScore;
+    private float averageScore;
 
     public Student(){
         this.studentId = 0;
@@ -88,6 +88,7 @@ public class Student implements Comparable<Student>{
         System.out.println("Enter programming intro score: ");
         this.programmingIntroScore = sc.nextFloat();
         sc.nextLine();
+        this.averageScore = this.calculateAverageScore();
     }
 
     public void outputStudent(){
@@ -96,6 +97,7 @@ public class Student implements Comparable<Student>{
         System.out.println("Math score: " + this.mathScore);
         System.out.println("Physics score: " + this.physicsScore);
         System.out.println("Programming intro score: " + this.programmingIntroScore);
-        System.out.println("Average score: " + this.calculateAverageScore());
+        System.out.println("Average score: " + this.averageScore);
     }
+
 }
