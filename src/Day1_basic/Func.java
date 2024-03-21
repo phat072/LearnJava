@@ -1,4 +1,4 @@
-package Day1;
+package Day1_basic;
 
 public class Func {
     int Sum(int a, int b){

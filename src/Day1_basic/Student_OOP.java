@@ -1,4 +1,4 @@
-package Day1;
+package Day1_basic;
 
 public class Student_OOP {
     public static void main(String[] args) {
