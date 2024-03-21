@@ -38,10 +38,7 @@ public class Quiz1 {
             this.denominator = denominator;
         }
 
-        public Fraction() {
-            return;
-        }
-
+        public Fraction(){}
 
         public void input(){
             System.out.println("Enter numerator and denominator:");
@@ -112,12 +109,10 @@ public class Quiz1 {
             this.c = c;
         }
 
-        public Triangle(){
-            return;
-        }
+        public Triangle(){}
 
         public void input(){
-
+            System.out.println("============Triangle============");
             System.out.println("Enter sides:");
             this.a = sc.nextDouble();
             this.b = sc.nextDouble();
@@ -129,7 +124,7 @@ public class Quiz1 {
                 this.b = sc.nextDouble();
                 this.c = sc.nextDouble();
             }
-            while(this.a + this.b > this.c || this.a + this.c > this.b || this.b + this.c > this.a);
+            while(this.a + this.b <= this.c || this.a + this.c <= this.b || this.b + this.c <= this.a);
         }
 
         public double perimeter(){
@@ -142,8 +137,7 @@ public class Quiz1 {
         }
 
         public void output(){
-            System.out.println("this triangle");
-            System.out.printf("sides: " + this.a + ", " + this.b + ", ", this.c);
+            System.out.printf("sides: " + this.a + ", " + this.b + ", ", + this.c);
             System.out.println("perimeter: " + perimeter());
             System.out.println("area: " + area());
         }
@@ -164,7 +158,7 @@ public class Quiz1 {
 
 
         public void input(){
-
+            System.out.println("============Rectangle============");
             System.out.println("Enter sides: ");
             this.a = sc.nextDouble();
             this.b = sc.nextDouble();
@@ -180,7 +174,7 @@ public class Quiz1 {
         }
 
         public void output(){
-            System.out.println("============Rectangle============");
+
             System.out.println("sides: " + this.a + ", " + this.b);
             System.out.println("perimeter: " + perimeter());
             System.out.println("area: " + area());
@@ -199,7 +193,7 @@ public class Quiz1 {
         }
 
         public void input(){
-
+            System.out.println("============Square============");
             System.out.println("Enter side: ");
             this.a = sc.nextDouble();
 
@@ -214,7 +208,6 @@ public class Quiz1 {
         }
 
         public void output(){
-            System.out.println("============Square============");
             System.out.println("sides: " + this.a );
             System.out.println("perimeter: " + perimeter());
             System.out.println("area: " + area());
@@ -233,7 +226,7 @@ public class Quiz1 {
         }
 
         public void input(){
-
+            System.out.println("============Circle============");
             System.out.println("Enter radius: ");
             this.r = sc.nextDouble();
 
@@ -248,7 +241,6 @@ public class Quiz1 {
         }
 
         public void output(){
-            System.out.println("============Circle============");
             System.out.println("radius: " + this.r);
             System.out.println("perimeter: " + perimeter());
             System.out.println("area: " + area());
@@ -266,8 +258,8 @@ public class Quiz1 {
             B.input();
             System.out.println("The range from point A to B is: " + A.get_Range(B));
 
-            Fraction a = new Fraction(2,3);
-            Fraction b = new Fraction(5,7);
+            Fraction a = new Fraction(2, 3);
+            Fraction b = new Fraction(5, 7);
             Fraction result = a.sum(b);
             System.out.println("Sum of 2 fraction: " + result.numerator + "/" + result.denominator);
 
@@ -275,6 +267,9 @@ public class Quiz1 {
             Fr1.input();
             Fraction Fr2 = new Fraction();
             Fr2.input();
+
+            Fraction Sum = Fr1.sum(Fr2);
+            System.out.println("Sum of 2 fraction: " + Sum.numerator + "/" + Sum.denominator);
 
 
             result = a.sub(b);
