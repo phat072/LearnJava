@@ -1,10 +1,10 @@
 # LearnJava
 
-## Day 1 Basic Java Exercises
+## Day 1 Basic Database.Java Exercises
 
-This repository contains basic Java exercises. Each exercise is contained in its own Java file.
+This repository contains basic Database.Java exercises. Each exercise is contained in its own Database.Java file.
 
-### Main.java
+### Database.Main.java
 
 This file contains three methods: `bai1()`, `bai2()`, and `bai3()`. `bai1()` prints "Hello world!". `bai2()` calculates a mathematical sum based on user input. `bai3()` calculates the area and perimeter of a triangle based on user input.
 
@@ -34,19 +34,19 @@ This file contains a program that shuffles an array of integers and allows the u
 
 ## How to Run
 
-To run any of these programs, compile the Java file using a Java compiler and then run the compiled class file. For example, to run `Main.java`, use the following commands:
+To run any of these programs, compile the Database.Java file using a Database.Java compiler and then run the compiled class file. For example, to run `Database.Main.java`, use the following commands:
 
 ```bash
-javac Main.java
-java Main # compile the Java file
+javac Database.Main.java
+java Database.Main # compile the Database.Java file
 ```
 
-Replace `Main` with the name of the file you want to run.
+Replace `Database.Main` with the name of the file you want to run.
 
 
-## Day 2 Object-Oriented Programming (OOP) Java Exercises
+## Day 2 Object-Oriented Programming (OOP) Database.Java Exercises
 
-This repository contains Java exercises that demonstrate the principles of Object-Oriented Programming (OOP). Each exercise is contained in its own Java file.
+This repository contains Database.Java exercises that demonstrate the principles of Object-Oriented Programming (OOP). Each exercise is contained in its own Database.Java file.
 
 ### Quiz1.java
 
@@ -62,9 +62,9 @@ This file contains a `Student` class that implements the `Comparable` interface.
 
 
 
-## Day 3 Swing GUI Java Exercises
+## Day 3 Swing GUI Database.Java Exercises
 
-This repository contains Java exercises that demonstrate the use of Swing GUI in Java. Each exercise is contained in its own Java file.
+This repository contains Database.Java exercises that demonstrate the use of Swing GUI in Database.Java. Each exercise is contained in its own Database.Java file.
 
 ### Accept_Student_Information.java
 

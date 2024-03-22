@@ -10,7 +10,7 @@ public class B1 {
 
         // 1a
         try {
-            InputStream is = new FileInputStream("/home/phan/Workspace/Java/LearnJava/javaBasic/src/Day3_SwingGUI/b1.txt");
+            InputStream is = new FileInputStream("/home/phan/Workspace/Database.Java/LearnJava/javaBasic/src/Day3_SwingGUI/b1.txt");
 
             int i = -1;
 
@@ -24,7 +24,7 @@ public class B1 {
 
         // 1b
         try {
-            OutputStream w = new FileOutputStream("/home/phan/Workspace/Java/LearnJava/javaBasic/src/Day3_SwingGUI/b2.txt");
+            OutputStream w = new FileOutputStream("/home/phan/Workspace/Database.Java/LearnJava/javaBasic/src/Day3_SwingGUI/b2.txt");
 
             byte[] by = new byte[] { 'W', 'e', ' ', 'a', 'r', 'e', ' ', 't', 'h', 'e', ' ', 'b', 'e', 's', 't', ' ', 'g', 'r', 'o', 'u', 'p' };
 
@@ -39,7 +39,7 @@ public class B1 {
 
         // 1c
         try {
-            InputStream in = new FileInputStream("/home/phan/Workspace/Java/LearnJava/javaBasic/src/Day3_SwingGUI/b1.txt");
+            InputStream in = new FileInputStream("/home/phan/Workspace/Database.Java/LearnJava/javaBasic/src/Day3_SwingGUI/b1.txt");
 
             byte[] temp = new byte[10];
             int i = -1;
