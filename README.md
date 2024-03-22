@@ -4,7 +4,7 @@
 
 This repository contains basic Database.Java exercises. Each exercise is contained in its own Database.Java file.
 
-### Database.Main.java
+### Main.java
 
 This file contains three methods: `bai1()`, `bai2()`, and `bai3()`. `bai1()` prints "Hello world!". `bai2()` calculates a mathematical sum based on user input. `bai3()` calculates the area and perimeter of a triangle based on user input.
 
