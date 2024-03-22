@@ -2,9 +2,9 @@ package Day3_SwingGUI;
 import javax.swing.*;
 import java.awt.*;
 
-public class Register extends javax.swing.JFrame{
+public class Accept_Student_Information extends javax.swing.JFrame{
     //Create new form login
-    public Register(){
+    public Accept_Student_Information(){
         initComponents();
     }
 
@@ -37,7 +37,7 @@ public class Register extends javax.swing.JFrame{
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         jLabel1.setFont(new java.awt.Font("Times New Roman", Font.BOLD, 18));
-        jLabel1.setText("Register Form");
+        jLabel1.setText("Accept Student Information");
 
         jLabel2.setText("Name");
         textAge.addActionListener(new java.awt.event.ActionListener(){
@@ -276,11 +276,11 @@ public class Register extends javax.swing.JFrame{
                 }
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Accept_Student_Information.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Register().setVisible(true);
+                new Accept_Student_Information().setVisible(true);
             }
         });
     }

@@ -43,6 +43,7 @@ java Main # compile the Java file
 
 Replace `Main` with the name of the file you want to run.
 
+
 ## Day 2 Object-Oriented Programming (OOP) Java Exercises
 
 This repository contains Java exercises that demonstrate the principles of Object-Oriented Programming (OOP). Each exercise is contained in its own Java file.
@@ -59,30 +60,31 @@ This file contains a `Student` class that implements the `Comparable` interface.
 
 This file contains a `Student` class that implements the `Comparable` interface. The class has properties for student ID, student name, math score, physics score, programming intro score, and average score. It also has methods for inputting student data, calculating the average score, and outputting student data.
 
-## How to Run
 
-To run any of these programs, compile the Java file using a Java compiler and then run the compiled class file. For example, to run `Quiz1.java`, use the following commands:
-
-```bash
-javac Quiz1.java
-java Quiz1
-```
-
-Replace `Quiz1` with the name of the file you want to run.
 
 ## Day 3 Swing GUI Java Exercises
 
 This repository contains Java exercises that demonstrate the use of Swing GUI in Java. Each exercise is contained in its own Java file.
 
-### Register.java
+### Accept_Student_Information.java
 
 This file contains a `Register` class that extends `javax.swing.JFrame`. The class demonstrates the use of various Swing components such as `JLabel`, `JTextField`, `JTextArea`, `JComboBox`, `JList`, `JRadioButton`, `JButton`, `JPanel`, `JScrollPane`, and `ButtonGroup`.
 
-The `Register` class includes a `main` method that sets the look and feel of the UI to "Nimbus" and makes a new `Register` frame visible.
+The `Accept_Student_Information` class includes a `main` method that sets the look and feel of the UI to "Nimbus" and makes a new `Accept_Student_Information` frame visible.
 
 The `initComponents` method initializes all the Swing components and sets their properties. It also adds action listeners to some of the components.
 
 The `btnOkActionPerformed` method checks if all the fields are filled and shows a success message if they are, or an error message if they aren't.
 
 The `btnCloseActionPerformed` method closes the application.
+
+### Login.java
+
+This file contains a `Login` class that extends `javax.swing.JFrame`. The class demonstrates the use of various Swing components such as `JLabel`, `JTextField`, `JPasswordField`, and `JButton`.
+
+The `Login` class includes a `main` method that sets the look and feel of the UI to "Nimbus" and makes a new `Login` frame visible.
+
+The `initComponents` method initializes all the Swing components and sets their properties. It also adds action listeners to some of the components.
+
+The `btnOkActionPerformed` method checks if the username and password fields are filled and shows a success message if they are, or an error message if they aren't. If the username is "Adminuser" and the password is "admin", it opens a new `Register` frame and closes the `Login` frame.
 
